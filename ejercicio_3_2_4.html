@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<title> Tabla y Formulario</title>
+</head>
+
+<body>
+<div class="container">
+<h2>Formulario</h2>
+<hr>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputNombre" class="control-label col-xs-2">Nombre</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="inputNombre" placeholder=" Nombre(s)">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputApellidos" class="control-label col-xs-2">Apellidos</label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" id="inputApellidos" placeholder=" Apellidos">
+        </div>
+    </div>
+    
+    <div class="form-group">
+    <label class="control-label col-xs-2">Sexo</label>
+    <div class="col-xs-6">
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="opcion" id="opcion1" value="femenino" checked>Femenino 
+		  </label>
+		</div>
+		<div class="radio">
+		  <label>
+		    <input type="radio" name="opcion" id="opcion2" value="masculino">Masculino
+		  </label>
+		</div>
+	</div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputApellidos" class="control-label col-xs-2">Nivel Escolar</label>
+        <div class="col-xs-6">
+			<select class="form-control">
+				<option>Superior</option>
+				<option>Media Superior</option>
+				<option>Media Basica</option>
+			  	<option>Basica</option>
+			</select>
+		</div>
+    </div>
+
+    <div class="form-group">
+        <label for="inputApellidos" class="control-label col-xs-2">Perfil</label>
+        <div class="col-xs-6">
+			<textarea class="form-control" rows="3"></textarea>
+		</div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-2 col-xs-10">
+            <button type="submit" class="btn btn-success">Enviar</button>
+          
+        </div>
+    </div>
+</form>
+
+
+
+<div class="container">
+                                                                               
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Sexo</th>
+        <th>Nivel Escolar </th>
+        <th>Perfil</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Israel</td>
+        <td>Arjona Vizcaíno</td>
+        <td>Masculino</td>
+        <td>Postgrado</td>
+        <td>Docente en el Instituto Tecnológico de Tepic </td>
+      </tr>
+    </tbody>
+	<tbody>
+      <tr>
+        <td>2</td>
+        <td>Ernesto</td>
+        <td>Pacheco Morelos</td>
+        <td>Masculino</td>
+        <td>Superior</td>
+        <td>Experto en TICs </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
